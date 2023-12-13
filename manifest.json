@@ -10,7 +10,7 @@
     "css": [ "css/bootstrap.min.css","css/style.css"],
     "exclude_matches": [ "http://trade.1688.com/*" ],
     "js": ["jquery.min.js","bootstrap.min.js", "contentScript.js"],
-    "matches": [ "http://*.taobao.com/*", "https://*.taobao.com/*", "http://*.1688.com/*", "https://*.1688.com/*" ]
+    "matches": [ "http://*.1688.com/*", "https://*.1688.com/*" ]
   }],
   "content_security_policy": {
     "extension_pages": "script-src 'self' ; object-src 'self'"
@@ -26,8 +26,7 @@
   "incognito": "split",
   "manifest_version": 3,
   "name": "Công cụ thanh toán xadal.com",
-  "host_permissions": ["https://client.xadal.com/", "http://*.1688.com/*", "https://*.1688.com/*",
-   "http://*.taobao.com/*", "https://*.taobao.com/*" ],
+  "host_permissions": ["https://client.xadal.com/", "http://*.1688.com/*", "https://*.1688.com/*" ],
   "permissions": [
      "cookies",
      "storage"
