@@ -1,0 +1,738 @@
+.loader {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+  margin: auto;
+  border: 5px solid #EAF0F6;
+  border-radius: 50%;
+  border-top: 5px solid #5998DB;
+  width: 50px;
+  height: 50px;
+  animation: spinner 4s linear infinite;
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.sussess_popup {
+    min-width: 220px;
+    width: fit-content;
+    z-index: 2147483647;
+    position: fixed;
+    right: -5%;
+    top: 12%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px #00000040;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    padding: 15px;
+}
+.sussess_popup > .boder_img_sc {
+    margin-right: 15px;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    user-select: none;
+    background: url(chrome-extension://__MSG_@@extension_id__/icons/sussess.png) no-repeat;
+}
+.sussess_popup > div >span {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #333333;
+}
+.chipo-wrapper {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    font-family: Helvetica, Arial, sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 99999999999;
+    color: #fff;
+    opacity: 0.9;
+}
+.c-pointer{
+    cursor: pointer;
+}
+.box-deposit:last-child{
+    margin-bottom: 0 !important;
+}
+.chipo-wrapper .chipo-alert {
+    display: inline-block;
+    width: 100%;
+    opacity: 0.95;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    float: left;
+    box-shadow: none;
+    background-color: rgba(242, 99, 32, 0.52);
+    font-size: 12px;
+}
+.chipo-wrapper .chipo-content {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    font-size: 13px;
+    float: left;
+    height: 40px;
+}
+.chipo-wrapper .chipo-content .chipo-block {
+    display: inline-block;
+    width: auto;
+    height: 40px;
+    float: left;
+    /*background: transparent url(chrome-extension://__MSG_@@extension_id__/icons/bg-addon.png) repeat top left;*/
+    min-height: 17px;
+    background: #1D60A6;
+    float: right;
+    text-align: center;
+}
+.chipo-wrapper .chipo-content .chipo-block > ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.chipo-wrapper .chipo-content .chipo-block > ul > li {
+    display: inline-block;
+    float: left;
+}
+.chipo-wrapper ul.chipo-list-inline > li:nth-of-type(1) {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+.chipo-wrapper ul.chipo-list-inline > li {
+    height: 40px;
+    border-right: 0.5px solid #3F92D1;
+    display: inline-block;
+    float: left;
+}
+.chipo-wrapper ul.chipo-list-inline > li:nth-of-type(1) a {
+    width: 106px;
+    position: relative;
+    top: 7px;
+    height: 24px;
+    display: inline-block;
+    padding-left: 20px;
+    color: #fff;
+    background: url(chrome-extension://__MSG_@@extension_id__/icons/home-td.png) center no-repeat ;
+}
+
+.chipo-wrapper ul.chipo-list-inline > li:nth-of-type(2) label {
+    cursor: pointer;
+}
+.chipo-wrapper .chipo-icon-shopping-cart {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: transparent url(chrome-extension://__MSG_@@extension_id__/icons/cart_td.png) no-repeat top left;
+    position: relative;
+    top: 7px;
+}
+.chipo-wrapper .chipo-icon-shopping-detail {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: transparent url(chrome-extension://__MSG_@@extension_id__/icons/xemct.png) no-repeat top left;
+    position: relative;
+    top: 7px;
+}
+.hotline {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: transparent url(chrome-extension://__MSG_@@extension_id__/icons/hotline.png) no-repeat top left;
+    position: relative;
+    top: 12px;
+}
+.text-hot{
+    color: #FFBF00;
+    font-size: 14px;
+    font-weight: 700;
+}
+.chipo-wrapper .chipo-icon-count-cart {
+    padding-bottom: 2px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: red;
+    position: absolute;
+    top: -3px;
+    font-size: 11px;
+    border-radius: 4px;
+}
+.chipo-wrapper ul.chipo-list-inline{
+    float: right;
+}
+.chipo-wrapper ul.chipo-list-inline > li:nth-of-type(3) a.btn {
+    font-family: Arial, Helvetica, sans-serif !important;
+    margin-top: 0px;
+    margin-right: 0;
+    font-weight: bold;
+    line-height: 40px;
+    border-radius: 3px;
+    -webkit-box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.75);
+}
+.chipo-wrapper ul.chipo-list-inline > li:nth-of-type(2) label input {
+    display: none;
+}
+.chipo-wrapper ul.chipo-list-inline > li:nth-of-type(2) label span {
+    height: 12px;
+    margin-bottom: -2px;
+    line-height: 40px;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.chipo-wrapper ul.chipo-list-inline > li:nth-of-type(2) {
+    line-height: 40px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.chipo-wrapper ul.chipo-list-inline > li:nth-of-type(3) {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.chipo-wrapper ul.chipo-list-inline > li:nth-of-type(2) label [type=checkbox]:checked + span:before {
+    content: '\2714';
+    position: absolute;
+    left: 0;
+    top: -27px;
+    color: #032d3e;
+}
+.chipo-wrapper ul.chipo-list-inline > li:nth-of-type(4) a.btn-seudo {
+    max-width: 200px;
+    margin-right: 0;
+}
+.btn-chipo {
+    background: #26B01C;
+    border-color: #26B01C;
+    color: #fff !important;
+}
+.btn-chipo:hover {
+    background-color: #26B01C;
+    color: white;
+}
+.btn-chipo:focus {
+    color: white;
+}
+.chipo-wrapper .btn-order {
+    height: 40px;
+    padding: 0 15px;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #fff;
+    float: left;
+    cursor: pointer;
+    border: 1px solid #df4146;
+    -webkit-box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.75);
+    background: #f15922;
+    border-color: #f15922;
+}
+.chipo-wrapper .chipo-content .chipo-link {
+    color: #fff;
+    float: left;
+    line-height: 17px;
+    padding-left: 25px;
+}
+.chipo-wrapper ul.chipo-list-inline > li:nth-of-type(3) > ul > li {
+    display: inline-block;
+    float: left;
+    height: 17px;
+    padding-top: 16px;
+}
+.pos-relative {
+    position: relative;
+}
+.chipo-wrapper ul.chipo-list-inline > li:nth-of-type(4) {
+    padding-left: 0px;
+    padding-right: 20px;
+}.chipo-wrapper ul.chipo-list-inline > li:nth-of-type(5) {
+    padding-right: 20px;
+}
+.chipoModal-cp {
+    border-top: 3px solid #f15922;
+}
+.chipoModal-cp .btn {
+    min-width: 127px;
+}
+.chipoModal-cp .chipoModal-header {
+    border-bottom-color: #f4f4f4;
+    background: #f7f7f7;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+.chipoModal-cp .close {
+    width: 32px;
+    height: 32px;
+    background-color: #f15922;
+    opacity: 1;
+    border-radius: 100%;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    margin-top: 0;
+    background: url(chrome-extension://__MSG_@@extension_id__/icons/icon-close.png) no-repeat;
+}
+.del-ncc-img{
+    width: 50%;
+    height: 100%;
+    margin-top: 10px;
+    background: url(chrome-extension://__MSG_@@extension_id__/icons/del-ncc.png)  no-repeat;
+}
+.pd15 {
+    padding: 15px;
+}
+.chipoModal-cp {
+    border-top: 3px solid #f15922;
+}
+.chipoModal-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+.chipoModal-cp .chipoModal-header {
+    border-bottom-color: #f4f4f4;
+    background: #f7f7f7;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+}
+.chipoModal-cp .chipoModal-header .chipoModal-title {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+.chipoModal-header {
+    min-height: 16.43px;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.chipoModal-body {
+    background: #FCFDFF;
+    position: relative;
+    padding: 15px;
+}
+.chipoModal-footer {
+    background: #f7f7f7;
+    padding:15px;
+    text-align: right !important;
+    border-top: 0px;
+}
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+}
+.chipoModal-title {
+    margin: 0;
+    line-height: 1.42857143;
+}
+.text-success {
+    color: #3c763d;
+}
+.text-danger {
+    color: #E04B4A;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.pd15 {
+    padding: 15px;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.chipoModal-footer .btn+.btn {
+    margin-bottom: 0 !important;
+    margin-left: 5px !important;
+}
+.chipoModal-footer .btn {
+    margin: 0 0 0 5px !important;;
+    padding: auto !important;
+}
+.chipoModal-cp .btn {
+    min-width: 127px;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+.box-deposit{
+    margin: 0px ;
+    border: 0.3px solid #ddd;
+    background: #fff;
+}
+.box-deposit .ls-deposit2 p {
+    font-family: Arial, Helvetica, sans-serif !important;
+    text-decoration: none;
+    color: #333;
+}
+.chipoModal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+.btn-default {
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    color: #616161 !important;
+}
+.chipoModal-open .chipoModal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.chipoModal-dialog {
+    position: relative;
+    width: 90%;
+    margin: 30px auto;
+}
+.chipoModal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999999;
+    background: rgba(0, 0, 0, 0.74);
+}
+
+#weorder-cart {
+    display: none !important;
+}
+
+.weorder-cart-collapse-c {
+    display: none !important;
+}
+
+#tbe-wrapper {
+    display: none !important;
+}
+
+._addon-template {
+    display: none !important;
+}
+
+.chipo-toggle-container {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 99999999999;
+}
+
+#chipo-toggle-addon {
+    float: right;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 10px;
+    background: transparent;
+}
+#chipo-toggle-addon:hover, #chipo-toggle-addon:active {
+    text-decoration: none !important;
+    color: #ff7300 !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.chipo-box-info {
+    width: 480px;
+    margin: 10px auto;
+    padding: 10px 10px 10px 0;
+    font-size: 14px;
+    border: 2px solid #f15922;
+    overflow: hidden;
+    background: #FFF2E8;
+}
+
+.chipo-logo {
+    width: 100px;
+    float: left;
+    margin: 10px 10px 0px 20px;
+}
+
+.chipo-basic-info ul{
+    float: left;
+    padding: 5px 0 5px 15px;
+    border-left: 2px solid #ccc;
+    width: 330px;
+    font-size: 16px;
+}
+
+.chipo-warning {
+    clear: both;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    margin: 10px 0px 0px;
+    color: red;
+}
+
+.chipo-advanced-info {
+    background-color: #d9edf7;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.chipo-advanced-info table th, .chipo-advanced-info table td {
+    padding: 0px 80px 0px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.chipo-note {
+    clear: both;
+    padding: 10px 10px 0 10px;
+}
+
+.chipo-note textarea {
+    border-color: #f15922;
+    width: 100%;
+}
+
+.text-chipo {
+    color: #f15922;
+}
+
+.chipo-basic-info #sell_price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.chipo-yen {
+    font-family: Roboto;
+}
+
+.ls-warning {
+    text-align: center;
+    color: red;
+    display: none;
+}
+.prod-logo {
+    width: 105px;
+    height: 55px;
+    display: inline-block;
+    background: transparent url(chrome-extension://__MSG_@@extension_id__/icons/home.png) no-repeat top left;
+    position: relative;
+    top: 3px;
+}
+
+.w-40{
+    width: 40%;
+}
+.w-20{
+    width: 20%;
+}
+.w-15{
+    width: 15%;
+}
+.w-5{
+    width: 5%;
+}
+.w-10{
+    width: 10%;
+}
+
+.font-700{
+    font-weight: 700 !important;
+}
+.head-main p{
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 0.3px solid #ddd;
+    padding-bottom: 15px;
+}
+.dongia{
+    text-align: center;
+}
+/*.w-h-100{
+    background: transparent url(chrome-extension://__MSG_@@extension_id__/icons/product.png) no-repeat;
+}*/
+.wh100{
+    width: 100px !important;
+    height: 100px !important;
+}
+.name-product{
+    color: #575757;
+    font-size: 14px;
+    font-weight: 400;
+}
+.product{
+    border-bottom: 0.3px solid #ddd;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+.pd0{
+    padding-top: 0px !important;
+}
+.price-product{
+    color: #575757 !important;
+    font-size: 14px;
+    font-weight: 400;
+}
+.right-15{
+    margin-right: 15px;
+}
+.bot-5{
+    margin-bottom: 5px;
+}
+.quantity-change{
+    border: 0.5px solid #5998DB;
+    background: #E5F2FF;
+    width: 28px;
+    height: 36px;
+}
+.downdo{
+    border-radius: 4px 0px 0px 4px;
+}
+.pointer{
+    cursor: pointer;
+}
+.updo{
+    border-radius: 0px 4px 4px 0px;
+}
+.val-quantity{
+    text-align: center;
+    width: 48px;
+    height: 36px;
+    border: 0.5px solid #5998DB;
+    color: #575757;
+}
+.ghichu{
+    resize: none;
+    outline: none;
+    padding-left: 12px;
+    color: #575757;
+    font-size: 14px;
+    width: 206px;
+    height: 121px;
+    border-radius: 4px;
+    border: 1px solid #5998DB;
+}
+.text-red{
+    color: #DD2120 !important;
+}
+.price-vn{
+    font-size: 14px;
+}.price-china{
+    font-size: 16px;
+}
+.del-ncc{
+    padding-top: 15px;
+    margin-right: 0;
+    margin-left: 0;
+
+}
+.margin-bot-0{
+    margin-bottom: 0;
+}
+.total-ncc{
+    margin-left: 10px;
+    font-size: 24px;
+    color: #DD2120;
+}
+.container-nhacc{
+    width: 100%;overflow-x: auto;
+    overflow-y: hidden;
+}
+.nhacungcap-pro{
+    min-width: 1090px;
+}
+.bot-20{
+    margin-bottom: 20px;
+}
+
+
+.chipoModal-body::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+.chipoModal-body::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.chipoModal-body::-webkit-scrollbar-thumb {
+    background: #5998DB;
+    border-radius: 5px;
+}
+
+.chipoModal-body::-webkit-scrollbar-track {
+    background: #eeeeee;
+}
+
+.container-nhacc::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+.container-nhacc::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.container-nhacc::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 5px;
+}
+
+.container-nhacc::-webkit-scrollbar-track {
+    background: #eeeeee;
+}
